@@ -1,0 +1,8 @@
+.table.table-deco table {
+  border-color: green;
+  border-style: dashed;
+  border-width: 3px;
+}
+.table.table-deco table tr th {
+  background: cyan;
+}

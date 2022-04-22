@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, NavLink } from "react-router-dom";
+import { EnvHappyCode } from "./EnvHappyCode/EnvHappyCode";
+import { Table } from "./Table/Table";
+import { Main } from "./Student/Main";
+import { AppCompany } from "./Company/AppCompany";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main className="main">
+        <h1 className="heading">Wipro All Training Solutions</h1>
+        <section className="container">
+          <nav>
+            <ul>
+              <li>
+                <NavLink to="/">
+                  Topic 2: React JS - Environment Assignment 1:
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/table">Topic 3: React JS - JSX</NavLink>
+              </li>
+              <li>
+                <NavLink to="/student">
+                  Topic 4: React JS – Components & Topics 5: React JS - State
+                  Assignment 1:
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/company">
+                  Topic 6: React JS – Props Assignment 1:
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+          <Routes>
+            <Route path="/table/*" element={<Table />} />
+            <Route path="/student" element={<Main />} />
+            <Route path="/company" element={<AppCompany />} />
+            <Route path="/" element={<EnvHappyCode />} />
+          </Routes>
+        </section>
+      </main>
+    </>
   );
-}
+};
 
 export default App;

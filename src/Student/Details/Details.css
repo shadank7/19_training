@@ -1,0 +1,12 @@
+.student-table {
+  font-size: 14px;
+}
+.student-table tr:nth-child(even) {
+  background: #ccc;
+}
+.student-table tr:nth-child(odd) {
+  background: #ddd;
+}
+.student-table tr th {
+  background: #aaa;
+}
