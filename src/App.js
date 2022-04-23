@@ -3,6 +3,10 @@ import { EnvHappyCode } from "./EnvHappyCode/EnvHappyCode";
 import { Table } from "./Table/Table";
 import { Main } from "./Student/Main";
 import { AppCompany } from "./Company/AppCompany";
+import ValidateProps from "./ValidateProps/ValidateProps";
+import { Assignment3 } from "./Table/Assigment3/Assignment3";
+import { ComponentLifeCycle } from "./ComponentLifeCycle/ComponentLifeCycle";
+import { FormEventAlert } from "./FormEventAlert/FormEventAlert";
 import "./App.css";
 
 const App = () => {
@@ -32,12 +36,42 @@ const App = () => {
                   Topic 6: React JS – Props Assignment 1:
                 </NavLink>
               </li>
+              <li>
+                <NavLink to="/props-validation">
+                  Topic 7: React JS - Props Validation Assignment 1:
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/component-api">
+                  Topic 8: React JS - Component API
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/component-lifecycle">
+                  Topic 9: React JS - Component Life Cycle Assignment 1:
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/form-event">
+                  Topic 10: React JS – Forms & Topic 11: React JS - Events
+                </NavLink>
+              </li>
             </ul>
           </nav>
           <Routes>
             <Route path="/table/*" element={<Table />} />
             <Route path="/student" element={<Main />} />
             <Route path="/company" element={<AppCompany />} />
+            <Route
+              path="/props-validation"
+              element={<ValidateProps age="21" />}
+            />
+            <Route path="/component-api" element={<Assignment3 />} />
+            <Route
+              path="/component-lifecycle"
+              element={<ComponentLifeCycle />}
+            />
+            <Route path="/form-event" element={<FormEventAlert />} />
             <Route path="/" element={<EnvHappyCode />} />
           </Routes>
         </section>

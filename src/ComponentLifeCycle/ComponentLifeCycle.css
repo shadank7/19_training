@@ -1,0 +1,19 @@
+.quote {
+  border: 3px dotted #bbb;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.quote strong,
+.quote button {
+  cursor: pointer;
+}
+.quote button {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: lightblue;
+  border: none;
+  inset: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

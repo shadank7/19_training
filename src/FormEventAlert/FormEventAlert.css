@@ -1,0 +1,23 @@
+.form {
+  display: grid;
+  grid-row-gap: 0.5rem;
+  justify-content: center;
+}
+
+.form input[type="text"] {
+  padding: 10px;
+  border: 1px solid rgb(17 17 17);
+}
+.form label {
+  font-weight: bold;
+}
+.form button {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: lightblue;
+  border: none;
+  inset: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

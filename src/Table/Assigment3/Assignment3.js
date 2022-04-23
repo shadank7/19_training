@@ -28,9 +28,9 @@ export const Assignment3 = () => {
             </tr>
           </thead>
           <tbody>
-            {tableDigit.map((val) => {
+            {tableDigit.map((val, index) => {
               return (
-                <tr>
+                <tr key={index}>
                   <td>
                     {val.tableNum} X {val.incrementNum}
                   </td>
